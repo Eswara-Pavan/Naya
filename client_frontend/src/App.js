@@ -24,24 +24,12 @@ function App() {
       <div className="bg_container">
         <NavBar />
         <Routes>
-          <Route exact path="/login" element={<LoginPage />} />
+          <Route exact path="/" element={<LoginPage />} />
           <Route exact path='/signup' element={<SignUp />} />
           <Route exact path='/sketch' element={<SketchPage />} />
         </Routes>
       </div>
     </context.Provider>
-    // <div>
-    //   <div className='logoContainer'>
-    //     <p>Logo</p>
-    //   </div>
-    //   <div className="App">
-    //     <Routes>
-    //       <Route exact path="/login" element={<LoginPage />} />
-    //       <Route exact path='/signup' element={<SignUp />} />
-    //       <Route exact path='/sketch' element={<SketchPage />} />
-    //     </Routes>
-    //   </div>
-    // </div>
   );
 }
 

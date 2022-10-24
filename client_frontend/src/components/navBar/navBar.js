@@ -1,29 +1,28 @@
 import { React, useContext, useEffect, useState } from "react";
 import "./navBar.css";
-import { Link } from "react-router-dom";
 import { context } from "../../App";
 import { useNavigate } from "react-router-dom";
 
 
 const NavBar = () => {
   const userContext = useContext(context)
-  const [userName , setuserName] = useState("")
-  const { name,setName } = userContext
+  const [userName, setuserName] = useState("")
+  const { name, setName } = userContext
   const navigate = useNavigate()
-  const hadlelogout = ()=>{
-  
+  const hadlelogout = () => {
+
     localStorage.removeItem("name")
     setuserName("")
-    navigate("/login")
+    navigate("/")
     setName("")
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     const localName = localStorage.getItem("name")
-    if(localName){
+    if (localName) {
       setuserName(localName)
     }
-  },[userName])
+  }, [userName])
 
   return (
     <nav className="nav_bar">

@@ -65,7 +65,7 @@ const SignUp = () => {
 
   }
   const openlogin = () => {
-    navigate("/login")
+    navigate("/")
   }
 
 
