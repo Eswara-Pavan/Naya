@@ -48,7 +48,7 @@ const SignUp = () => {
           .then((res) => {
             console.log(res)
             if (res) {
-              navigate("/login")
+              navigate("/")
             }
           }).catch((err) => {
             console.log(err)
