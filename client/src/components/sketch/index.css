@@ -1,0 +1,40 @@
+.sketchContainer{
+ display: flex;
+ flex-direction: row;
+ background-color: rgb(250, 250, 250);
+ background-color: rgba(240, 238, 238, 0.6);
+ justify-content:center;
+ align-items: center;
+ height: 100vh;
+ padding: 20px;
+}
+.card{
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0 15px 25px rgba(136, 136, 136, 0.6);
+  width: 50%;
+  margin-left: 20px;
+  padding: 10px;
+}
+.SKETCHES{
+  display: none;
+  transition: 1.5s;
+}
+.cradHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 20px;
+}
+.buttonCard{
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: [pointer];
+}
+.btnadd{
+  cursor: pointer;
+  border: none;
+
+}
